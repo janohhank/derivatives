@@ -60,8 +60,8 @@ for x in range(df.size):
             ax4.arrow(
                 df[x],
                 df[y],
-                0.05 * (df[x] - rf_dx[x][y]),
-                0.05 * (df[y] - rf_dy[x][y]),
+                0.05 * (rf_dx[x][y] - df[x]),
+                0.05 * (rf_dy[x][y] - df[y]),
                 width=0.03)
 
 matplotlib.pyplot.show()
